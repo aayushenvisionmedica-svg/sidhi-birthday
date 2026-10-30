@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Sidhi 💗</title>
+<style>
+:root{--pink:#ff7fa8;--deep:#a94370;--cream:#fff8fb;--lav:#eee8ff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family: "Trebuchet MS",system-ui,sans-serif;color:#57334a;background:radial-gradient(circle at 10% 10%,#ffe0ed,transparent 35%),radial-gradient(circle at 90% 15%,#e8ddff,transparent 32%),linear-gradient(135deg,#fff7fb,#fff0f5 55%,#f5f0ff);overflow-x:hidden}
+main{width:min(920px,92%);margin:32px auto 60px}
+.card{background:#ffffffd9;border:1px solid #ffffff;border-radius:30px;padding:clamp(22px,5vw,48px);box-shadow:0 20px 60px #b86c8c25;text-align:center;backdrop-filter:blur(8px)}
+.kicker{letter-spacing:3px;text-transform:uppercase;font-size:.75rem;color:#b45b83;font-weight:800}
+h1{font-size:clamp(2.5rem,8vw,5.5rem);line-height:1.02;margin:14px 0;color:#d94f87}
+h2{color:#bd4f7d;margin:0 0 12px}
+.subtitle{font-size:clamp(1rem,2.8vw,1.25rem);line-height:1.7;max-width:650px;margin:0 auto}
+.photo-wrap{width:min(270px,72vw);height:270px;margin:26px auto 18px;border-radius:28px;padding:8px;background:linear-gradient(135deg,#ff9fbd,#c5a8ff);transform:rotate(-2deg);box-shadow:0 12px 30px #b45b8330}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;border-radius:22px;background:#fff0f6}
+.photo-fallback{display:none;height:100%;border-radius:22px;background:linear-gradient(135deg,#ffe1ec,#eee6ff);align-items:center;justify-content:center;font-size:4rem}
+button{border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(90deg,#f36f9d,#a98ae9);color:white;font-weight:800;font-size:1rem;cursor:pointer;box-shadow:0 8px 20px #d36c9c35;transition:.2s}
+button:hover{transform:translateY(-2px) scale(1.02)}
+.section{margin-top:22px;text-align:left;background:#fff9fc;border:1px solid #ffe4ef;border-radius:24px;padding:24px}
+.section p{line-height:1.8;margin:8px 0}
+.hidden-message{display:none;margin-top:18px;background:#fff0f6;border-radius:20px;padding:20px;line-height:1.8}
+.hidden-message.show{display:block;animation:pop .45s ease}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:18px}
+.tile{background:#fff;border:1px solid #f8dce8;border-radius:20px;padding:18px;text-align:center;line-height:1.6}
+.big-heart{font-size:2rem}
+footer{text-align:center;color:#9e6681;padding:24px 8px;font-size:.95rem}
+.float{position:fixed;pointer-events:none;opacity:.65;animation:rise 8s linear infinite;z-index:-1}
+@keyframes rise{from{transform:translateY(110vh) rotate(0);opacity:0}15%{opacity:.7}to{transform:translateY(-15vh) rotate(35deg);opacity:0}}
+@keyframes pop{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:scale(1)}}
+.confetti{position:fixed;top:-20px;font-size:20px;animation:fall 3.5s linear forwards;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+@media(max-width:560px){main{margin:14px auto 35px}.photo-wrap{height:230px}.section{padding:19px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="kicker">A little birthday surprise, made with lots of love</div>
+    <h1>Happy Birthday<br>Sidhi! 🎂</h1>
+    <p class="subtitle">Meri chhoti si partner-in-crime, aaj ka din sirf tumhara hai. 💗</p>
+    <div class="photo-wrap">
+      <img src="sidhi-photo.jpeg" alt="Sidhi" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="photo-fallback">🎀💗</div>
+    </div>
+    <p class="subtitle">Pune mein ho ya mujhse kitni bhi door… meri favourite nautanki hamesha mere dil ke paas rahegi. 🫶</p>
+    <div style="margin-top:24px"><button onclick="celebrate()">🎉 Tap for a little birthday magic</button></div>
+  </div>
+
+  <section class="section">
+    <h2>Ek baat bolun, Sidhi? 💌</h2>
+    <p>Kaash hum paas rehte… toh shayad aaj tumhe cake khilane ke naam par thoda sa tang karta, tumhari favourite treats laata, aur tumhari birthday wali nautanki live dekh pata. 😄</p>
+    <p>Par distance chahe Delhi aur Pune jitna bhi ho, apnapan kabhi kam nahi hota. Tum sirf meri cousin nahi, meri chhoti behan jaisi ho. Aur tumhari yeh wish ki kaash hum saath rehte… sach kahun, kabhi-kabhi meri bhi yahi wish hoti hai. ❤️</p>
+  </section>
+
+  <section class="section">
+    <h2>Official birthday rules 😎</h2>
+    <div class="grid">
+      <div class="tile"><div class="big-heart">😂</div><b>Rule 1</b><br>Aaj bilkul nakhre allowed hain. Birthday hai boss!</div>
+      <div class="tile"><div class="big-heart">🍰</div><b>Rule 2</b><br>Cake ka ek extra piece meri taraf se bhi kha lena.</div>
+      <div class="tile"><div class="big-heart">🌷</div><b>Rule 3</b><br>Hamesha aise hi hansti rehna. Ye smile priceless hai.</div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center">
+    <h2>Ek chhota sa surprise… 🎁</h2>
+    <p>Is button ko dabao. Dil se likha message tumhara wait kar raha hai.</p>
+    <button onclick="document.getElementById('secret').classList.toggle('show')">Open your little surprise 💗</button>
+    <div id="secret" class="hidden-message">
+      <b>Sidhi, meri pyaari chhoti behan…</b><br>
+      Life mein chahe hum alag-alag cities mein rahein, main hamesha tumhare liye cheer karunga. Jab bhi tumhe kisi bade bhai ki zaroorat ho—advice ke liye, hasi-mazaak ke liye, ya bas baat karne ke liye—yaad rakhna, main hoon.<br><br>
+      Bhagwan tumhari har achhi wish poori kare, tumhe bahut saari khushiyan de, aur tumhari life cake se bhi zyada sweet ho. <br><br>
+      <b>Lots of love, hugs &amp; thodi si teasing — tumhara bada bhai. ❤️</b>
+    </div>
+  </section>
+  <footer>Made with ❤️, just for you, Sidhi. <br>Distance is only in kilometres, not in love. 🫂</footer>
+</main>
+<script>
+function celebrate(){
+  const items=['💗','🎀','✨','🎉','🌸','💖','🧁'];
+  for(let i=0;i<42;i++){
+    const el=document.createElement('span');el.className='confetti';el.textContent=items[Math.floor(Math.random()*items.length)];
+    el.style.left=Math.random()*100+'vw';el.style.animationDelay=Math.random()*1.2+'s';
+    document.body.appendChild(el);setTimeout(()=>el.remove(),4800);
+  }
+}
+const floaties=['💗','✨','🌸','💕'];
+setInterval(()=>{const el=document.createElement('span');el.className='float';el.textContent=floaties[Math.floor(Math.random()*floaties.length)];el.style.left=Math.random()*100+'vw';el.style.fontSize=(14+Math.random()*18)+'px';document.body.appendChild(el);setTimeout(()=>el.remove(),8500)},900);
+</script>
+</body>
+</html>
